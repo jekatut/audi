@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* База */
+body{
+  font-family: "Montserrat",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+.container{
+  max-width: 1200px;
+  padding:0 15px;
+  margin: 0 auto;
+  
+}
+a{
+  font-size: 22px;
+}
+/* Шапка */
+header{
+  position:relative;
+  /* background: linear-gradient(-43deg, #2f2f2f 0%, #202020 100%); */
+  background-color: #000;
+  
+  border-bottom-right-radius: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color:#fff;
+}
+.header-video{
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-bottom-right-radius: 100px;
+  opacity:0.5;
+}
+header .container{
+  position:relative;
+  z-index: 7;
+}
+.header-rom{
+  display: flex;
+  flex-direction: row;
+  column-gap: 60px;
+  align-items: center;
+
+}
+.header-rom img{
+  border-radius: 80px;
+  max-width: 540px;
+}
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.header-text p{
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 300;
+}
+.header-btns{
+  display: flex;
+  column-gap:20px;
+}
+.btn{
+  height: 48px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #000;
+  border-radius:8px;
+  color:#FFF;
+  font-size: 16px;
+  transition: all 0.2s ease-in;
+
+}
+.btn:hover{
+  background-color: #1782CF;
+}
+.btn-border{
+  height: 48px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border:1px solid #3B3B3B;
+  border-radius:8px;
+  color:#FFF;
+  font-size: 16px;
+  transition: all 0.2s ease-in;
+
+}
+.btn-border:hover{
+  border:1px solid #1782CF;
+}
+/* Портфолио */
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.card img{
+  margin-bottom: 30px;
+  border-radius: 30px;
+  transition: opacity 0.5s ease-in;
+}
+.card img:hover{
+  opacity:0.8;
+  cursor: pointer;
+}
+.portfolio h2{
+font-size: 52px;
+margin-bottom: 65px;
+
+}
+/* Контакты */
+.contakts{
+  background-color:#252525;
+  padding: 80px 0;
+  border-top-left-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contakts h2{
+  font-size: 52px;
+  color:#FFF;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.messangers{
+  display:flex;
+  column-gap:30px;
+}
+.messanger{
+  flex-grow: 1;
+  border:1px solid  #363636;
+  border-radius:20px;
+  padding: 45px 20px;
+  display: flex;
+  column-gap:15px;
+  align-items:center;
+transition: background-color 0.2s ease-in;
+}
+.messanger:hover{
+  background-color: #1E1e1E;
+  cursor: pointer;
+}
+.messanger a{
+  color:#FFF;
+}
+/* Футер */
+footer{
+  background-color:#1E1E1E;
+  padding: 30px 0;
+  color: #5D5D5D;
+}
+.footer-inner{
+  text-align: center;
+}
+.footer-inner p{
+  margin-top: 15px;
+}
+
+nav{
+  position: fixed;
+  top:0;
+  z-index: 10;
+  width: 100%;
+  background: rgba(3,29,52,0.65)
+}
+.navigation{
+  display: flex;
+  justify-content: center;
+  column-gap:20px;
+  padding: 15px 0;
+}
+.navigation a{
+  color:#FFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: all 500ms;
+
+}
+.navigation:hover a:hover{
+  color:#1782CF;
+}
